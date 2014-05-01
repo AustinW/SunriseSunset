@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E4F741319116A0600612F68 /* CitiesCD.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1E4F741219116A0600612F68 /* CitiesCD.sqlite */; };
+		1E4F741619116A5D00612F68 /* CitiesCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F741419116A5D00612F68 /* CitiesCD.xcdatamodeld */; };
+		1E78FE9D1910707200AE2B6E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E78FE9C1910707200AE2B6E /* City.m */; };
+		1E78FE9F191070E100AE2B6E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E78FE9E191070E100AE2B6E /* CoreData.framework */; };
+		1E78FEA21910816800AE2B6E /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E78FEA11910816800AE2B6E /* RootNavigationController.m */; };
 		1EBF767519103F8800D715A1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1EBF767419103F8800D715A1 /* Podfile */; };
-		1EBF76781910417500D715A1 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF76771910417500D715A1 /* Database.m */; };
-		1EBF767C1910420A00D715A1 /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF767B1910420A00D715A1 /* Cities.m */; };
-		1EBF768019104EBC00D715A1 /* us_cities_with_timezones.sl3 in Resources */ = {isa = PBXBuildFile; fileRef = 1EBD8644191023EA002A057F /* us_cities_with_timezones.sl3 */; };
 		1EBF7683191050B900D715A1 /* CitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF7682191050B900D715A1 /* CitiesTableViewController.m */; };
 		1ECBD823190F606D000BB1C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECBD822190F606D000BB1C0 /* Foundation.framework */; };
 		1ECBD825190F606D000BB1C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECBD824190F606D000BB1C0 /* CoreGraphics.framework */; };
@@ -19,20 +21,23 @@
 		1ECBD82F190F606D000BB1C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECBD82E190F606D000BB1C0 /* main.m */; };
 		1ECBD833190F606D000BB1C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECBD832190F606D000BB1C0 /* AppDelegate.m */; };
 		1ECBD836190F606D000BB1C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECBD834190F606D000BB1C0 /* Main.storyboard */; };
-		1ECBD839190F606D000BB1C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECBD838190F606D000BB1C0 /* ViewController.m */; };
+		1ECBD839190F606D000BB1C0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECBD838190F606D000BB1C0 /* MainViewController.m */; };
 		1ECBD83B190F606D000BB1C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ECBD83A190F606D000BB1C0 /* Images.xcassets */; };
 		1ECBD85C190F65A3000BB1C0 /* libiOSnova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECBD85B190F65A3000BB1C0 /* libiOSnova.a */; };
+		1ECEAD85191207470064F1EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECEAD84191207470064F1EC /* CoreLocation.framework */; };
 		641052D716CC4462B0EE5AC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE79B7EA26D472CAFCF592D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CE79B7EA26D472CAFCF592D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EBD8644191023EA002A057F /* us_cities_with_timezones.sl3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = us_cities_with_timezones.sl3; sourceTree = "<group>"; };
+		1E4F741219116A0600612F68 /* CitiesCD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = CitiesCD.sqlite; path = "../../../../../../../Library/Developer/Xcode/DerivedData/CityDump-egefhkbhgiuzrhhkatbsiuxquxdm/Build/Products/Debug/CitiesCD.sqlite"; sourceTree = "<group>"; };
+		1E4F741519116A5D00612F68 /* CitiesCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CitiesCD.xcdatamodel; sourceTree = "<group>"; };
+		1E78FE9B1910707200AE2B6E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		1E78FE9C1910707200AE2B6E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		1E78FE9E191070E100AE2B6E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1E78FEA01910816800AE2B6E /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		1E78FEA11910816800AE2B6E /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		1EBF767419103F8800D715A1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1EBF76761910417500D715A1 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
-		1EBF76771910417500D715A1 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
-		1EBF767A1910420A00D715A1 /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
-		1EBF767B1910420A00D715A1 /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
 		1EBF7681191050B900D715A1 /* CitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesTableViewController.h; sourceTree = "<group>"; };
 		1EBF7682191050B900D715A1 /* CitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesTableViewController.m; sourceTree = "<group>"; };
 		1ECBD81F190F606D000BB1C0 /* SunriseSunset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunriseSunset.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,13 +51,14 @@
 		1ECBD831190F606D000BB1C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1ECBD832190F606D000BB1C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1ECBD835190F606D000BB1C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1ECBD837190F606D000BB1C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1ECBD838190F606D000BB1C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1ECBD837190F606D000BB1C0 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1ECBD838190F606D000BB1C0 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1ECBD83A190F606D000BB1C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1ECBD841190F606D000BB1C0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1ECBD857190F635D000BB1C0 /* libiOSnova.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiOSnova.a; path = "../libnova/iOSnova/iOSnova/build/Debug-iphoneos/libiOSnova.a"; sourceTree = "<group>"; };
 		1ECBD859190F64D9000BB1C0 /* libMacnova.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMacnova.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/SunriseSunset-apgadltqkdxhmneewtwgxegaoycj/Build/Products/Debug/libMacnova.a"; sourceTree = "<group>"; };
 		1ECBD85B190F65A3000BB1C0 /* libiOSnova.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiOSnova.a; path = "../libnova/iOSnova/iOSnova/build/Debug-iphoneos/libiOSnova.a"; sourceTree = "<group>"; };
+		1ECEAD84191207470064F1EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E2FA6C1915534415A30B8D6D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,8 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECEAD85191207470064F1EC /* CoreLocation.framework in Frameworks */,
 				1ECBD85C190F65A3000BB1C0 /* libiOSnova.a in Frameworks */,
 				1ECBD825190F606D000BB1C0 /* CoreGraphics.framework in Frameworks */,
+				1E78FE9F191070E100AE2B6E /* CoreData.framework in Frameworks */,
 				1ECBD827190F606D000BB1C0 /* UIKit.framework in Frameworks */,
 				1ECBD823190F606D000BB1C0 /* Foundation.framework in Frameworks */,
 				641052D716CC4462B0EE5AC1 /* libPods.a in Frameworks */,
@@ -72,13 +80,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E78FEA31910816C00AE2B6E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E78FEA01910816800AE2B6E /* RootNavigationController.h */,
+				1E78FEA11910816800AE2B6E /* RootNavigationController.m */,
+				1EBF7681191050B900D715A1 /* CitiesTableViewController.h */,
+				1EBF7682191050B900D715A1 /* CitiesTableViewController.m */,
+				1ECBD837190F606D000BB1C0 /* MainViewController.h */,
+				1ECBD838190F606D000BB1C0 /* MainViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		1EBF76791910417B00D715A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1EBF767A1910420A00D715A1 /* Cities.h */,
-				1EBF767B1910420A00D715A1 /* Cities.m */,
-				1EBF76761910417500D715A1 /* Database.h */,
-				1EBF76771910417500D715A1 /* Database.m */,
+				1E4F741419116A5D00612F68 /* CitiesCD.xcdatamodeld */,
+				1E78FE9B1910707200AE2B6E /* City.h */,
+				1E78FE9C1910707200AE2B6E /* City.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -104,6 +124,8 @@
 		1ECBD821190F606D000BB1C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1ECEAD84191207470064F1EC /* CoreLocation.framework */,
+				1E78FE9E191070E100AE2B6E /* CoreData.framework */,
 				1ECBD85B190F65A3000BB1C0 /* libiOSnova.a */,
 				1ECBD859190F64D9000BB1C0 /* libMacnova.a */,
 				1ECBD857190F635D000BB1C0 /* libiOSnova.a */,
@@ -119,14 +141,11 @@
 		1ECBD828190F606D000BB1C0 /* SunriseSunset */ = {
 			isa = PBXGroup;
 			children = (
+				1E78FEA31910816C00AE2B6E /* View Controllers */,
 				1EBF76791910417B00D715A1 /* Models */,
 				1ECBD831190F606D000BB1C0 /* AppDelegate.h */,
 				1ECBD832190F606D000BB1C0 /* AppDelegate.m */,
 				1ECBD834190F606D000BB1C0 /* Main.storyboard */,
-				1EBF7681191050B900D715A1 /* CitiesTableViewController.h */,
-				1EBF7682191050B900D715A1 /* CitiesTableViewController.m */,
-				1ECBD837190F606D000BB1C0 /* ViewController.h */,
-				1ECBD838190F606D000BB1C0 /* ViewController.m */,
 				1ECBD83A190F606D000BB1C0 /* Images.xcassets */,
 				1ECBD829190F606D000BB1C0 /* Supporting Files */,
 			);
@@ -136,8 +155,8 @@
 		1ECBD829190F606D000BB1C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1E4F741219116A0600612F68 /* CitiesCD.sqlite */,
 				1EBF767419103F8800D715A1 /* Podfile */,
-				1EBD8644191023EA002A057F /* us_cities_with_timezones.sl3 */,
 				1ECBD82A190F606D000BB1C0 /* SunriseSunset-Info.plist */,
 				1ECBD82B190F606D000BB1C0 /* InfoPlist.strings */,
 				1ECBD82E190F606D000BB1C0 /* main.m */,
@@ -200,11 +219,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EBF768019104EBC00D715A1 /* us_cities_with_timezones.sl3 in Resources */,
 				1ECBD83B190F606D000BB1C0 /* Images.xcassets in Resources */,
 				1ECBD82D190F606D000BB1C0 /* InfoPlist.strings in Resources */,
 				1EBF767519103F8800D715A1 /* Podfile in Resources */,
 				1ECBD836190F606D000BB1C0 /* Main.storyboard in Resources */,
+				1E4F741319116A0600612F68 /* CitiesCD.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,11 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ECBD839190F606D000BB1C0 /* ViewController.m in Sources */,
+				1ECBD839190F606D000BB1C0 /* MainViewController.m in Sources */,
 				1ECBD833190F606D000BB1C0 /* AppDelegate.m in Sources */,
 				1EBF7683191050B900D715A1 /* CitiesTableViewController.m in Sources */,
-				1EBF767C1910420A00D715A1 /* Cities.m in Sources */,
-				1EBF76781910417500D715A1 /* Database.m in Sources */,
+				1E4F741619116A5D00612F68 /* CitiesCD.xcdatamodeld in Sources */,
+				1E78FEA21910816800AE2B6E /* RootNavigationController.m in Sources */,
+				1E78FE9D1910707200AE2B6E /* City.m in Sources */,
 				1ECBD82F190F606D000BB1C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +442,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E4F741419116A5D00612F68 /* CitiesCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E4F741519116A5D00612F68 /* CitiesCD.xcdatamodel */,
+			);
+			currentVersion = 1E4F741519116A5D00612F68 /* CitiesCD.xcdatamodel */;
+			path = CitiesCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1ECBD817190F606D000BB1C0 /* Project object */;
 }

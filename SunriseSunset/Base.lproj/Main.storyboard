@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Root Navigation Controller-->
         <scene sceneID="OdV-SL-egS">
             <objects>
-                <navigationController definesPresentationContext="YES" id="gfO-8F-shO" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="gfO-8F-shO" customClass="RootNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Yh-9H-NbW">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-989" y="49"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -56,11 +56,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XAe-A3-88d">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cityCell" id="XAe-A3-88d">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XAe-A3-88d" id="tQH-mF-PKG">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -71,8 +71,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Select a City" id="4Mp-07-5zl"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="m0P-eD-Od2" id="1Wk-qh-uIf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9F-gZ-vBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="m0P-eD-Od2">
+                    <connections>
+                        <outlet property="delegate" destination="e5S-1h-3qY" id="Tdj-Wc-I9y"/>
+                        <outlet property="searchContentsController" destination="e5S-1h-3qY" id="rXb-O2-QLs"/>
+                        <outlet property="searchResultsDataSource" destination="e5S-1h-3qY" id="WWY-0i-OLr"/>
+                        <outlet property="searchResultsDelegate" destination="e5S-1h-3qY" id="7fL-Z1-KSe"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-4" y="49"/>
         </scene>
