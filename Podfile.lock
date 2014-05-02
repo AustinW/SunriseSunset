@@ -1,14 +1,13 @@
 PODS:
-  - FMDB (2.2):
-    - FMDB/standard
-  - FMDB/common (2.2)
-  - FMDB/standard (2.2):
-    - FMDB/common
+  - CorePlot (1.5.1)
+  - XYPieChart (0.2)
 
 DEPENDENCIES:
-  - FMDB
+  - CorePlot (~> 1.5.1)
+  - XYPieChart (~> 0.2)
 
 SPEC CHECKSUMS:
-  FMDB: e0dd09464b4e1a1cd7fa51ea835ae821b5656865
+  CorePlot: 7b55ddfce42eb93051c0f9edba927fd246831f6d
+  XYPieChart: 17fa4ce063f09cf60716ff6974cfb5930bdc6afd
 
 COCOAPODS: 0.32.1

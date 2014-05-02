@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "RootNavigationController.h"
 
-
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;

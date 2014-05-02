@@ -15,13 +15,8 @@
 
 - (void)viewDidLoad
 {
-    MainViewController *rootViewController = [self rootViewController];
+    MainViewController *rootViewController = [[self viewControllers] firstObject];
     rootViewController.managedObjectContext = self.managedObjectContext;
-}
-
-- (MainViewController *)rootViewController
-{
-    return [[self viewControllers] firstObject];
 }
 
 @end

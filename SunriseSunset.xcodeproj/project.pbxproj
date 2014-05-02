@@ -25,11 +25,16 @@
 		1ECBD83B190F606D000BB1C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ECBD83A190F606D000BB1C0 /* Images.xcassets */; };
 		1ECBD85C190F65A3000BB1C0 /* libiOSnova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECBD85B190F65A3000BB1C0 /* libiOSnova.a */; };
 		1ECEAD85191207470064F1EC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECEAD84191207470064F1EC /* CoreLocation.framework */; };
-		641052D716CC4462B0EE5AC1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE79B7EA26D472CAFCF592D /* libPods.a */; };
+		1ECEAD8919121D0C0064F1EC /* globe-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECEAD8819121D0C0064F1EC /* globe-48@2x.png */; };
+		1ECEAD8B19121DED0064F1EC /* 193-location-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECEAD8A19121DED0064F1EC /* 193-location-arrow@2x.png */; };
+		1ECEAD8D191220FD0064F1EC /* 193-location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECEAD8C191220FD0064F1EC /* 193-location-arrow.png */; };
+		1ECEAD8F1912216F0064F1EC /* globe-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECEAD8E1912216F0064F1EC /* globe-48.png */; };
+		1ECEAD91191229800064F1EC /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECEAD90191229800064F1EC /* XYPieChart.m */; };
+		1ECEAD951912412B0064F1EC /* Nova.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECEAD941912412B0064F1EC /* Nova.m */; };
+		1ECEAD9A1912F8A70064F1EC /* NovaPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECEAD991912F8A70064F1EC /* NovaPie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CE79B7EA26D472CAFCF592D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E4F741219116A0600612F68 /* CitiesCD.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = CitiesCD.sqlite; path = "../../../../../../../Library/Developer/Xcode/DerivedData/CityDump-egefhkbhgiuzrhhkatbsiuxquxdm/Build/Products/Debug/CitiesCD.sqlite"; sourceTree = "<group>"; };
 		1E4F741519116A5D00612F68 /* CitiesCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CitiesCD.xcdatamodel; sourceTree = "<group>"; };
 		1E78FE9B1910707200AE2B6E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
@@ -59,6 +64,17 @@
 		1ECBD859190F64D9000BB1C0 /* libMacnova.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMacnova.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/SunriseSunset-apgadltqkdxhmneewtwgxegaoycj/Build/Products/Debug/libMacnova.a"; sourceTree = "<group>"; };
 		1ECBD85B190F65A3000BB1C0 /* libiOSnova.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiOSnova.a; path = "../libnova/iOSnova/iOSnova/build/Debug-iphoneos/libiOSnova.a"; sourceTree = "<group>"; };
 		1ECEAD84191207470064F1EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1ECEAD8819121D0C0064F1EC /* globe-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe-48@2x.png"; sourceTree = "<group>"; };
+		1ECEAD8A19121DED0064F1EC /* 193-location-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "193-location-arrow@2x.png"; sourceTree = "<group>"; };
+		1ECEAD8C191220FD0064F1EC /* 193-location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "193-location-arrow.png"; sourceTree = "<group>"; };
+		1ECEAD8E1912216F0064F1EC /* globe-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe-48.png"; sourceTree = "<group>"; };
+		1ECEAD90191229800064F1EC /* XYPieChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XYPieChart.m; path = ../Pods/XYPieChart/XYPieChart/XYPieChart.m; sourceTree = "<group>"; };
+		1ECEAD931912412B0064F1EC /* Nova.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nova.h; sourceTree = "<group>"; };
+		1ECEAD941912412B0064F1EC /* Nova.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nova.m; sourceTree = "<group>"; };
+		1ECEAD961912F4F30064F1EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1ECEAD981912F8A70064F1EC /* NovaPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NovaPie.h; sourceTree = "<group>"; };
+		1ECEAD991912F8A70064F1EC /* NovaPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NovaPie.m; sourceTree = "<group>"; };
+		2C2022993B8A40D49EA53AA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FA6C1915534415A30B8D6D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +89,6 @@
 				1E78FE9F191070E100AE2B6E /* CoreData.framework in Frameworks */,
 				1ECBD827190F606D000BB1C0 /* UIKit.framework in Frameworks */,
 				1ECBD823190F606D000BB1C0 /* Foundation.framework in Frameworks */,
-				641052D716CC4462B0EE5AC1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +111,10 @@
 		1EBF76791910417B00D715A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1ECEAD931912412B0064F1EC /* Nova.h */,
+				1ECEAD941912412B0064F1EC /* Nova.m */,
+				1ECEAD981912F8A70064F1EC /* NovaPie.h */,
+				1ECEAD991912F8A70064F1EC /* NovaPie.m */,
 				1E4F741419116A5D00612F68 /* CitiesCD.xcdatamodeld */,
 				1E78FE9B1910707200AE2B6E /* City.h */,
 				1E78FE9C1910707200AE2B6E /* City.m */,
@@ -124,6 +143,7 @@
 		1ECBD821190F606D000BB1C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1ECEAD961912F4F30064F1EC /* MapKit.framework */,
 				1ECEAD84191207470064F1EC /* CoreLocation.framework */,
 				1E78FE9E191070E100AE2B6E /* CoreData.framework */,
 				1ECBD85B190F65A3000BB1C0 /* libiOSnova.a */,
@@ -133,7 +153,7 @@
 				1ECBD824190F606D000BB1C0 /* CoreGraphics.framework */,
 				1ECBD826190F606D000BB1C0 /* UIKit.framework */,
 				1ECBD841190F606D000BB1C0 /* XCTest.framework */,
-				0CE79B7EA26D472CAFCF592D /* libPods.a */,
+				2C2022993B8A40D49EA53AA8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,12 +161,14 @@
 		1ECBD828190F606D000BB1C0 /* SunriseSunset */ = {
 			isa = PBXGroup;
 			children = (
+				1ECEAD8719121CFE0064F1EC /* Icons */,
 				1E78FEA31910816C00AE2B6E /* View Controllers */,
 				1EBF76791910417B00D715A1 /* Models */,
 				1ECBD831190F606D000BB1C0 /* AppDelegate.h */,
 				1ECBD832190F606D000BB1C0 /* AppDelegate.m */,
 				1ECBD834190F606D000BB1C0 /* Main.storyboard */,
 				1ECBD83A190F606D000BB1C0 /* Images.xcassets */,
+				1ECEAD921912299A0064F1EC /* Dependencies */,
 				1ECBD829190F606D000BB1C0 /* Supporting Files */,
 			);
 			path = SunriseSunset;
@@ -163,6 +185,25 @@
 				1ECBD830190F606D000BB1C0 /* SunriseSunset-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1ECEAD8719121CFE0064F1EC /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				1ECEAD8E1912216F0064F1EC /* globe-48.png */,
+				1ECEAD8819121D0C0064F1EC /* globe-48@2x.png */,
+				1ECEAD8C191220FD0064F1EC /* 193-location-arrow.png */,
+				1ECEAD8A19121DED0064F1EC /* 193-location-arrow@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		1ECEAD921912299A0064F1EC /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				1ECEAD90191229800064F1EC /* XYPieChart.m */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +261,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ECBD83B190F606D000BB1C0 /* Images.xcassets in Resources */,
+				1ECEAD8B19121DED0064F1EC /* 193-location-arrow@2x.png in Resources */,
 				1ECBD82D190F606D000BB1C0 /* InfoPlist.strings in Resources */,
 				1EBF767519103F8800D715A1 /* Podfile in Resources */,
+				1ECEAD8D191220FD0064F1EC /* 193-location-arrow.png in Resources */,
+				1ECEAD8919121D0C0064F1EC /* globe-48@2x.png in Resources */,
+				1ECEAD8F1912216F0064F1EC /* globe-48.png in Resources */,
 				1ECBD836190F606D000BB1C0 /* Main.storyboard in Resources */,
 				1E4F741319116A0600612F68 /* CitiesCD.sqlite in Resources */,
 			);
@@ -267,8 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECEAD9A1912F8A70064F1EC /* NovaPie.m in Sources */,
+				1ECEAD91191229800064F1EC /* XYPieChart.m in Sources */,
 				1ECBD839190F606D000BB1C0 /* MainViewController.m in Sources */,
 				1ECBD833190F606D000BB1C0 /* AppDelegate.m in Sources */,
+				1ECEAD951912412B0064F1EC /* Nova.m in Sources */,
 				1EBF7683191050B900D715A1 /* CitiesTableViewController.m in Sources */,
 				1E4F741619116A5D00612F68 /* CitiesCD.xcdatamodeld in Sources */,
 				1E78FEA21910816800AE2B6E /* RootNavigationController.m in Sources */,
