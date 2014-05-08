@@ -180,7 +180,11 @@
         self.nova.latitude = newLocation.coordinate.latitude;
         self.nova.longitude = newLocation.coordinate.longitude;
         
-        self.novaPie = [[NovaPie alloc] initWithInfo:[self.nova calculate]];
+        NSDictionary *novaInfo = [self.nova calculateRst];
+        
+        [self debugNovaInfo:novaInfo];
+        
+        self.novaPie = [[NovaPie alloc] initWithInfo:novaInfo];
         
         [self.pieChart reloadData];
     }];
@@ -188,6 +192,42 @@
     NSLog(@"Update location with: %f %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
     [self.locationManager stopUpdatingLocation];
 }
+
+
+- (void)debugNovaInfo:(NSDictionary *)novaInfo
+{
+    NSLog(@"Nova Info: %@", novaInfo);
+
+    NSDictionary *rise, *set;
+
+    NSLog(@"---standard---");
+    rise = [[novaInfo objectForKey:@"standard"] objectForKey:@"rise"];
+
+    NSLog(@"%.0f", [[rise objectForKey:@"hour"] doubleValue]);
+    NSLog(@"Rise: %.0f", [[rise objectForKey:@"hour"] doubleValue] * 3600.0 + [[rise objectForKey:@"minute"] doubleValue] * 60.0 + [[rise objectForKey:@"second"] doubleValue]);
+    set = [[novaInfo objectForKey:@"standard"] objectForKey:@"set"];
+    NSLog(@"Set: %.0f", [[set objectForKey:@"hour"] doubleValue] * 3600.0 + [[set objectForKey:@"minute"] doubleValue] * 60.0 + [[set objectForKey:@"second"] doubleValue]);
+
+    NSLog(@"---civil---");
+    rise = [[novaInfo objectForKey:@"civil"] objectForKey:@"rise"];
+    NSLog(@"Rise: %.0f", [[rise objectForKey:@"hour"] doubleValue] * 3600.0 + [[rise objectForKey:@"minute"] doubleValue] * 60.0 + [[rise objectForKey:@"second"] doubleValue]);
+    set = [[novaInfo objectForKey:@"civil"] objectForKey:@"set"];
+    NSLog(@"Set: %.0f", [[set objectForKey:@"hour"] doubleValue] * 3600.0 + [[set objectForKey:@"minute"] doubleValue] * 60.0 + [[set objectForKey:@"second"] doubleValue]);
+
+    NSLog(@"---nautical---");
+    rise = [[novaInfo objectForKey:@"nautical"] objectForKey:@"rise"];
+    NSLog(@"Rise: %.0f", [[rise objectForKey:@"hour"] doubleValue] * 3600.0 + [[rise objectForKey:@"minute"] doubleValue] * 60.0 + [[rise objectForKey:@"second"] doubleValue]);
+    set = [[novaInfo objectForKey:@"nautical"] objectForKey:@"set"];
+    NSLog(@"Set: %.0f", [[set objectForKey:@"hour"] doubleValue] * 3600.0 + [[set objectForKey:@"minute"] doubleValue] * 60.0 + [[set objectForKey:@"second"] doubleValue]);
+
+    NSLog(@"---astronomical---");
+    rise = [[novaInfo objectForKey:@"astronomical"] objectForKey:@"rise"];
+    NSLog(@"Rise: %.0f", [[rise objectForKey:@"hour"] doubleValue] * 3600.0 + [[rise objectForKey:@"minute"] doubleValue] * 60.0 + [[rise objectForKey:@"second"] doubleValue]);
+    set = [[novaInfo objectForKey:@"astronomical"] objectForKey:@"set"];
+    NSLog(@"Set: %.0f", [[set objectForKey:@"hour"] doubleValue] * 3600.0 + [[set objectForKey:@"minute"] doubleValue] * 60.0 + [[set objectForKey:@"second"] doubleValue]);
+}
+
+
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {

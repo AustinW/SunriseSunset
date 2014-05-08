@@ -21,6 +21,7 @@
 @property (nonatomic) double date;
 
 - (id)initWithLatitude:(double)latitude andLongitude:(double)longitude;
-- (NSDictionary *)calculate;
+- (NSDictionary *)calculateRst;
 - (BOOL)hasLocation;
+
 @end
