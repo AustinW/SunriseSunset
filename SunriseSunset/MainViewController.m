@@ -44,9 +44,9 @@
     
     [self.pieChart setDelegate:self];
     [self.pieChart setDataSource:self];
-    [self.pieChart setStartPieAngle:M_PI_4];
+    [self.pieChart setStartPieAngle:0];
     [self.pieChart setAnimationSpeed:1];
-    [self.pieChart setLabelFont:[UIFont fontWithName:@"Helvetica Neue" size:24]];
+    [self.pieChart setLabelFont:[UIFont fontWithName:@"Helvetica Neue" size:0]];
     [self.pieChart setLabelColor:[UIColor blackColor]];
 //    [self.pieChart setLabelRadius:60];
     [self.pieChart setShowPercentage:YES];
@@ -116,18 +116,18 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     if (self.selectedCity) {
-        [self.lblLatitude setHidden:NO];
-        [self.lblLongitude setHidden:NO];
-        [self.lblLatitudeValue setHidden:NO];
-        [self.lblLongitudeValue setHidden:NO];
+        [self.lblSunrise setHidden:NO];
+        [self.lblSunset setHidden:NO];
+        [self.lblSunriseValue setHidden:NO];
+        [self.lblSunsetValue setHidden:NO];
         
         [self getCoordinatesFromAddress:self.selectedCity];
         [self.lblLocation setText:self.selectedCity];
     } else {
-        [self.lblLatitude setHidden:YES];
-        [self.lblLongitude setHidden:YES];
-        [self.lblLatitudeValue setHidden:YES];
-        [self.lblLongitudeValue setHidden:YES];
+        [self.lblSunrise setHidden:YES];
+        [self.lblSunset setHidden:YES];
+        [self.lblSunriseValue setHidden:YES];
+        [self.lblSunsetValue setHidden:YES];
     }
 }
 
@@ -140,8 +140,11 @@
         for (CLPlacemark *placemark in placemarks)
         {
             // Process the placemark.
-            NSString *latitude = [NSString stringWithFormat:@"%.8f", placemark.location.coordinate.latitude];
-            NSString *longitude = [NSString stringWithFormat:@"%.8f", placemark.location.coordinate.longitude];
+            
+            self.nova.latitude = placemark.location.coordinate.latitude;
+            self.nova.longitude = placemark.location.coordinate.longitude;
+            
+            [self processLocation];
         }
     }];
 }
@@ -180,17 +183,47 @@
         self.nova.latitude = newLocation.coordinate.latitude;
         self.nova.longitude = newLocation.coordinate.longitude;
         
-        NSDictionary *novaInfo = [self.nova calculateRst];
-        
-        [self debugNovaInfo:novaInfo];
-        
-        self.novaPie = [[NovaPie alloc] initWithInfo:novaInfo];
-        
-        [self.pieChart reloadData];
+        [self processLocation];
     }];
     
     NSLog(@"Update location with: %f %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
     [self.locationManager stopUpdatingLocation];
+}
+
+- (void)processLocation
+{
+    NSDictionary *novaInfo = [self.nova calculateRst];
+    
+    [self debugNovaInfo:novaInfo];
+    
+    self.novaPie = [[NovaPie alloc] initWithInfo:novaInfo];
+    
+    NSArray *slices = [self.novaPie getSlices];
+    
+    double startTime = [[slices firstObject] doubleValue];
+    
+    double startAngle = ((startTime / 86400) * 360) * 0.0174532925 * M_PI;
+    
+    [self.pieChart setStartPieAngle:startAngle];
+    
+    [self.pieChart reloadData];
+    
+    [self.lblSunrise setHidden:NO];
+    [self.lblSunset setHidden:NO];
+    [self.lblSunriseValue setHidden:NO];
+    [self.lblSunsetValue setHidden:NO];
+    
+    [self.lblSunriseValue setText:[self timeFromDictionary:novaInfo withRiseOrSet:@"rise"]];
+    [self.lblSunsetValue setText:[self timeFromDictionary:novaInfo withRiseOrSet:@"set"]];
+}
+
+- (NSString *)timeFromDictionary:(NSDictionary *)novaInfo withRiseOrSet:(NSString *)riseOrSet
+{
+    NSString *hour = [[[novaInfo objectForKey:@"standard"] objectForKey:riseOrSet] objectForKey:@"hour"];
+    NSString *minute = [[[novaInfo objectForKey:@"standard"] objectForKey:riseOrSet] objectForKey:@"minute"];
+    NSString *second = [[[novaInfo objectForKey:@"standard"] objectForKey:riseOrSet] objectForKey:@"second"];
+    
+    return [NSString stringWithFormat:@"%2d:%02d:%02d", [hour integerValue], [minute integerValue], [second integerValue]];
 }
 
 

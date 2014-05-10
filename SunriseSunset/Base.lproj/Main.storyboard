@@ -43,26 +43,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YD-DP-MGg">
-                                <rect key="frame" x="20" y="499" width="63" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunrise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4YD-DP-MGg">
+                                <rect key="frame" x="20" y="499" width="58" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITh-3a-EbF">
-                                <rect key="frame" x="20" y="527" width="77" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunset" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITh-3a-EbF">
+                                <rect key="frame" x="20" y="527" width="54" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffV-K9-ZgL">
-                                <rect key="frame" x="139" y="499" width="42" height="21"/>
+                                <rect key="frame" x="139" y="499" width="90" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx5-Bn-O6k">
-                                <rect key="frame" x="139" y="527" width="42" height="21"/>
+                                <rect key="frame" x="139" y="527" width="90" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -84,11 +84,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnCities" destination="7DM-UI-2Qc" id="HD2-iw-ibP"/>
-                        <outlet property="lblLatitude" destination="4YD-DP-MGg" id="btr-gn-1dk"/>
-                        <outlet property="lblLatitudeValue" destination="ffV-K9-ZgL" id="C4v-cI-EXi"/>
                         <outlet property="lblLocation" destination="Fmx-Z8-cyE" id="b0h-C5-ubd"/>
-                        <outlet property="lblLongitude" destination="ITh-3a-EbF" id="5Ev-JB-JpH"/>
-                        <outlet property="lblLongitudeValue" destination="fx5-Bn-O6k" id="CT0-pl-Znl"/>
+                        <outlet property="lblSunrise" destination="4YD-DP-MGg" id="F52-VQ-Tpx"/>
+                        <outlet property="lblSunriseValue" destination="ffV-K9-ZgL" id="Ytz-8B-436"/>
+                        <outlet property="lblSunset" destination="ITh-3a-EbF" id="k1I-AU-3Si"/>
+                        <outlet property="lblSunsetValue" destination="fx5-Bn-O6k" id="epd-S8-hCq"/>
                         <outlet property="pieChart" destination="9tP-X9-0WB" id="9yf-jm-UR9"/>
                     </connections>
                 </viewController>

@@ -24,10 +24,10 @@
 @property (nonatomic, strong) NovaPie *novaPie;
 @property (nonatomic, strong) NSDictionary *sunriseSunset;
 @property (weak, nonatomic) IBOutlet XYPieChart *pieChart;
-@property (weak, nonatomic) IBOutlet UILabel *lblLatitude;
-@property (weak, nonatomic) IBOutlet UILabel *lblLongitude;
-@property (weak, nonatomic) IBOutlet UILabel *lblLatitudeValue;
-@property (weak, nonatomic) IBOutlet UILabel *lblLongitudeValue;
+@property (weak, nonatomic) IBOutlet UILabel *lblSunrise;
+@property (weak, nonatomic) IBOutlet UILabel *lblSunset;
+@property (weak, nonatomic) IBOutlet UILabel *lblSunriseValue;
+@property (weak, nonatomic) IBOutlet UILabel *lblSunsetValue;
 
 - (IBAction)getCurrentLocation:(id)sender;
 
